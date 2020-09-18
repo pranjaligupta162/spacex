@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+*{padding: 0px;margin: 0px;box-sizing: border-box;}
+body{
+	background: #F2F2F2;
+	color: #555;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+@media only screen and (max-width: 1024px){
+	body{overflow: auto;}
+}

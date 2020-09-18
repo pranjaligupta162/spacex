@@ -1,0 +1,105 @@
+    .inner-container{overflow: auto;}
+	.main-container{    overflow: auto;padding: 5px 20px 20px;}
+	.mainHdTxt{    font-size: 27px;
+    padding: 0px 0px 10px;}
+	.fltrBtn{width: 50%;float: left;text-align: center;padding: 10px 0px;}
+	.fltrBtn button{background: #C5E09B;cursor: pointer;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 10px;text-transform: capitalize;
+    font-size: 14px;}
+    .fltrBtn button:hover{background: #7CBB14}
+	.filterData{width: 84%;float: left;margin-left: 1%;height: calc(100vh - 100px);
+    overflow: scroll; }
+	.filtersDv{width: 15%;float: left;    background: #fff;
+    border-radius: 10px;
+    padding: 10px;}
+	.filterDataBlock{width: 23%;
+    float: left;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;    margin: 0px 8px 10px;}
+	.text-capitalize{text-transform: capitalize;}
+	.text-center{text-align: center;}
+	.filtersDv h4{font-size: 18px;
+    padding: 10px 0px;}
+    .blockImg{
+    	    background: #f2f2f2;
+    		text-align: center;
+    		height: 144px;
+    }
+    .blockImg img{height: auto;width: 140px;}
+    .blockTxt{padding: 10px 0px 0px;height: 250px; overflow: auto;}
+    .blockTxt p{margin: 10px 0px;line-height: 20px;}
+    .blockHdTxt{color: #4D589A;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;padding: 10px 0px;}
+    .blockTxt p span:first-child{
+    	font-weight: 700;
+	    text-transform: capitalize;
+
+    } 
+    .blockTxt p span:last-child{
+    	font-weight: 100;
+	    text-transform: capitalize;
+	    color: #8C91B9;
+	    padding-left: 10px;
+    }
+    .blockTxt p span{font-size: 14px;}
+    .launchYrFltr, .succsLaunchFltr , .succsLandFltr{overflow: auto;}
+    .succsLaunchFltr , .succsLandFltr{margin-top:20px; }
+    .fltrHdTxt{font-size:16px; text-align: center; }
+    hr{width: 75%;margin: 2px auto 0px;color: #555;}
+    .active{background: #7CBB14!important;}
+    .msnIds{padding: 0px 10px;}
+    .msnIds li{ margin-left: 10px;}
+     @media only screen and (max-width: 500px){
+        .blockHdTxt{font-size: 16px;}
+     }
+     @media only screen and (max-width: 699px){
+        .filtersDv, .filterData{width: 100%;margin: 0px;}
+        .filterDataBlock{width: 100%;margin: 10px 0px 0px;}
+         .fltrBtn button{font-size: 19px;}
+        .fltrHdTxt {
+        font-size: 20px;}
+        hr {
+        width: 62%;}
+        .blockHdTxt{font-size: 18px;}
+        .blockTxt p span{font-size: 16px;}
+        .filterData{height: auto;}
+     }
+    @media only screen and (min-width: 700px) and (max-width: 1024px){
+        .fltrBtn button {
+            font-size: 25px;
+            padding: 12px 35px;
+           border-radius: 10px;
+        }
+        .fltrHdTxt {
+            font-size: 26px;
+        }
+        .filterDataBlock{width: 48%;    margin: 10px 5px;
+        padding: 20px;}
+        .filtersDv, .filterData{width: 100%;margin: 0px;}
+         .filterData{height: auto;}
+
+     }
+	.footer{
+		text-align: center;
+	    bottom: 0;
+	    display: block;
+	    width: 100%;
+	    padding: 10px;
+        position: fixed;
+	}
+	.footer h3{display:inline; }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1440px){
+        .filtersDv{overflow: scroll;height: calc(100vh - 100px);}
+        .fltrBtn{width:100%;}
+    }
+
+
+
+
+

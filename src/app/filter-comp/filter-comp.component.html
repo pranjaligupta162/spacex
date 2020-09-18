@@ -1,0 +1,40 @@
+<div class="main-container">
+	<div class="inner-container">
+		<div class=""><h1 class="text-capitalize mainHdTxt">spaceX launch programs</h1></div>
+		<div class="filtersDv">
+			<h4 class="text-capitalize">filters</h4>
+			<div class="launchYrFltr">
+				<p class="fltrHdTxt">Launch year</p>
+				<hr>
+				<div class="fltrBtn" *ngFor="let year of launchYrArr"><button [ngClass]="{active:launchYr==year}" (click)="getFilterdata('year',$event)">{{year}}</button></div>
+			</div>
+			<div class="succsLaunchFltr">
+				<p class="fltrHdTxt">Successful Launch</p>
+				<hr>
+				<div class="fltrBtn"><button [ngClass]="{active:launchStatus=='True'}" (click)="getFilterdata('launch',$event)">true</button></div>
+				<div class="fltrBtn"><button [ngClass]="{active:launchStatus=='False'}" (click)="getFilterdata('launch',$event)">false</button></div>
+			</div>
+			<div class="succsLandFltr">
+				<p class="fltrHdTxt">Successful Landing</p>
+				<hr>
+				<div class="fltrBtn"><button [ngClass]="{active:landStatus=='True'}" (click)="getFilterdata('land',$event)">true</button></div>
+				<div class="fltrBtn"><button [ngClass]="{active:landStatus=='False'}" (click)="getFilterdata('land',$event)">false</button></div>
+			</div>
+		</div>
+		<div class="filterData">
+			<div class="filterDataBlock" *ngFor="let dta of fltrDta">
+				<div class="blockImg">
+					<img src="{{dta.links.mission_patch_small}}">
+				</div>
+				<div class="blockTxt">
+					<p class="blockHdTxt">{{dta.mission_name}} #{{dta.flight_number}}</p>
+					<p><span>Mission Ids</span>:<span><ul class="msnIds"><li *ngFor="let mid of dta.mission_id">{{mid}}</li></ul></span></p>
+					<p><span>launch year</span>:<span>{{dta.launch_year}}</span></p>
+					<p><span>successful<br>launch</span>:<span>{{dta.launch_success}}</span></p>
+					<p><span>successful<br>landing</span>:<span>{{dta.rocket.first_stage.cores[0].land_success=='null'?'':dta.rocket.first_stage.cores[0].land_success}}</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer"><h3>Developed By</h3>:<span>Pranjali Gupta</span></footer>
+</div>
