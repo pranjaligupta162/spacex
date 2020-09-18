@@ -10,7 +10,7 @@
     font-size: 14px;}
     .fltrBtn button:hover{background: #7CBB14}
 	.filterData{width: 84%;float: left;margin-left: 1%;height: calc(100vh - 100px);
-    overflow: scroll; }
+    overflow: auto; }
 	.filtersDv{width: 15%;float: left;    background: #fff;
     border-radius: 10px;
     padding: 10px;}
@@ -95,8 +95,7 @@
 	.footer h3{display:inline; }
 
     @media only screen and (min-width: 1025px) and (max-width: 1440px){
-        .filtersDv{overflow: scroll;height: calc(100vh - 100px);}
-        .fltrBtn button{padding: 9% 20%;font-size: 13px;}
+        .filtersDv{overflow: auto;height: calc(100vh - 100px);}
     }
 
 
