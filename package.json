@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "dev:ssr": "ng run spacex:serve-ssr",
     "serve:ssr": "node dist/spacex/server/main.js",
-    "build:ssr": "npm run build --prod && npm run spacex:server:production",
+    "build:ssr": "ng run build --prod && ng run spacex:server:production",
     "prerender": "ng run spacex:prerender"
   },
   "private": true,
